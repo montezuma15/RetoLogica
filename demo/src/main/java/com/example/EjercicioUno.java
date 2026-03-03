@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class EjercicioUno {
 
-    public void order(ArrayList<Integer> lista) {
+    public static void order(ArrayList<Integer> lista) {
         ArrayList<Integer> result = new ArrayList<>();
         for (int i = 0; i < lista.size(); i++) {
             for (int j = 0; j < lista.size() - 1; j++) {
@@ -37,6 +37,7 @@ public class EjercicioUno {
         scanner.nextLine();
         System.out.println("Ingrese su cupon de descuento o escriba NONE si no se tiene uno");
         String cupon = scanner.nextLine();
+        System.out.println("Ingrese el costo de envio");
         long envio = scanner.nextLong();
 
         calcularTotal(precios, cupon, envio);
@@ -76,6 +77,7 @@ public class EjercicioUno {
         System.out.println("SUBTOTAL " + subtotal);
         System.out.println("DESCUENTO " + descuento);
         System.out.println("IVA " + iva);
+        System.out.println("ENVIO " + envio);
         System.out.println("TOTAL " + total);
     }
 
